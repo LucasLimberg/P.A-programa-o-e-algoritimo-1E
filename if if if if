@@ -1,0 +1,165 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPZ2E2Se0fbCVY6+jnOm2Oy",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/LucasLimberg/P.A-programa-o-e-algoritimo-1E/blob/main/if%20if%20if%20if\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#diferenciar se o numero ser par ou impar\n",
+        "\n",
+        "a = int(input(\"digite um numero:  \"))\n",
+        "\n",
+        "if a % 2 == 0:\n",
+        "  print(f\"seu numero {a} é par\")\n",
+        "\n",
+        "else:\n",
+        "  print(f\"seu nuemro {a} e um numero impar\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GWGWs12qn4yP",
+        "outputId": "64c280f4-d1b0-410d-e466-6583bf900eb2"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um numero:  7\n",
+            "seu nuemro 7 e um numero impar\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#escrever um programa que recebe 04 notas referente aos bimestres, calcula a media e mostra se o aluno foi:\n",
+        "#aprovado,recuperaçao ou reprovado\n",
+        "\n",
+        "nome = str(input(\"digite seu nome:  \"))\n",
+        "a = int(input(\"digite sua nota do 1 bimetre:  \"))\n",
+        "b = int(input(\"digite sua nota do 2 bimetre:  \"))\n",
+        "c = int(input(\"digite sua nota do 3 bimetre:  \"))\n",
+        "d = int(input(\"digite sua nota do 4 bimetre:  \"))\n",
+        "\n",
+        "media = (a + b + c + d) / 4\n",
+        "print(f\"sua media é {media}\")\n",
+        "\n",
+        "if  a > 10 or b > 10 or c > 10 or d > 10:\n",
+        "  print(\"digite um numero de 0 a 10\")\n",
+        "\n",
+        "if media >= 6:\n",
+        "  print(\"voce foi aprovado\")\n",
+        "\n",
+        "elif media >= 5:\n",
+        "  print(\"voce esta de recuperaçao\")\n",
+        "\n",
+        "else:\n",
+        "  print(\"voce foi reprovado\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "md44CmjLq5I9",
+        "outputId": "6369587e-88e0-4644-8060-ffba900bdc3c"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite seu nome:  wdqwkjugh\n",
+            "digite sua nota do 1 bimetre:  10\n",
+            "digite sua nota do 2 bimetre:  01\n",
+            "digite sua nota do 3 bimetre:  10\n",
+            "digite sua nota do 4 bimetre:  10\n",
+            "sua media é 7.75\n",
+            "voce foi aprovado\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#escrver um programa que recebe os valores de 03 lados e verificar se e um triangulo valido\n",
+        "# e classifica se e um triangulo\n",
+        "\n",
+        "#verificar se o triangulo e valido\n",
+        "\n",
+        "# classificar tipos de triangilo\n",
+        "\n",
+        "a = float(input(\"digite o valor do lado 1:  \"))\n",
+        "b = float(input(\"digite o valor do lado 2:  \"))\n",
+        "c = float(input(\"digite o valor do lado 2:  \"))\n",
+        "if a + b > c:\n",
+        "  print(f\" seu triangulo e um isosceles\")\n",
+        "elif a + b = c\n",
+        "  print(f\" seu triangulo e um equilatero\")\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "id": "khOyprHqy9-n",
+        "outputId": "38c66ab1-fa01-40ff-e419-2c13030bbad1"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "cannot assign to expression here. Maybe you meant '==' instead of '='? (896256651.py, line 13)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipykernel_14581/896256651.py\"\u001b[0;36m, line \u001b[0;32m13\u001b[0m\n\u001b[0;31m    elif a + b = c\u001b[0m\n\u001b[0m         ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m cannot assign to expression here. Maybe you meant '==' instead of '='?\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "ZSYwwfqC7bSQ"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
