@@ -1,0 +1,402 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP1hsbvlyqDw3myxc0mn+SK",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/LucasLimberg/P.A-programa-o-e-algoritimo-1E/blob/main/atividade\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "yG0lcBvkq8Kv"
+      },
+      "outputs": [],
+      "source": [
+        "# definir se um numero e par ou impar\n",
+        "\n",
+        "a = int(input(\"digite um numero:  \"))\n",
+        "\n",
+        "if a % 2 == 0:\n",
+        "  print(f\"seu numero {a} é par\")\n",
+        "\n",
+        "else:\n",
+        "  print(f\"seu nuemro {a} e um numero impar\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# solicite um numero e destinguir se e maior ou menor\n",
+        "\n",
+        "a = int(input(\"digite um numero:  \"))\n",
+        "b = int(input(\"digite um numero:  \"))\n",
+        "\n",
+        "\n",
+        "if a > b:\n",
+        "\n",
+        "  print(f\"{a} é maior {b}.\")\n",
+        "\n",
+        "elif a < b\n",
+        "\n",
+        "  print(f\"{b} e maior que {a}.\")\n",
+        "else:\n",
+        "  print(f\"{a} é igual a {b}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "L_q22XyGrHBj",
+        "outputId": "f222c3ff-4e8f-4a28-8c50-6d06f2e53c2e"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um numero:  11\n",
+            "digite um numero:  7\n",
+            "11 é maior 7.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Aprovação de aluno\n",
+        "\n",
+        "nome = str(input(\"digite seu nome:  \"))\n",
+        "a = int(input(\"digite sua nota do 1 bimetre:  \"))\n",
+        "b = int(input(\"digite sua nota do 2 bimetre:  \"))\n",
+        "c = int(input(\"digite sua nota do 3 bimetre:  \"))\n",
+        "d = int(input(\"digite sua nota do 4 bimetre:  \"))\n",
+        "\n",
+        "media = (a + b + c + d) / 4\n",
+        "print(f\"sua media é {media}\")\n",
+        "\n",
+        "if  a > 10 or b > 10 or c > 10 or d > 10:\n",
+        "  print(\"digite um numero de 0 a 10\")\n",
+        "\n",
+        "if media >= 6:\n",
+        "  print(\"voce foi aprovado\")\n",
+        "\n",
+        "elif media >= 5:\n",
+        "  print(\"voce esta de recuperaçao\")\n",
+        "\n",
+        "else:\n",
+        "  print(\"voce foi reprovado\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8Lr3MBset5Pj",
+        "outputId": "b0785af2-27ee-4b2f-f009-f8ff20844f28"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite seu nome:  lucas\n",
+            "digite sua nota do 1 bimetre:  10\n",
+            "digite sua nota do 2 bimetre:  1\n",
+            "digite sua nota do 3 bimetre:  10\n",
+            "digite sua nota do 4 bimetre:  10\n",
+            "sua media é 7.75\n",
+            "voce foi aprovado\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# classificaçao de idade\n",
+        "a = int(input(\" quantos anos voce tem:  \"))\n",
+        "b =  12\n",
+        "c = 17\n",
+        "d = 59\n",
+        "\n",
+        "if a <= b:\n",
+        "\n",
+        "  print(f\"voce é uma criança\")\n",
+        "\n",
+        "elif a <= c:\n",
+        "\n",
+        "  print(f\" voce e um adolescente\")\n",
+        "elif a <= d:\n",
+        "\n",
+        "  print(f\"voce e um adulto\")\n",
+        "\n",
+        "else:\n",
+        "  print (f\"voce e um idoso\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BH0qdxLUuyVW",
+        "outputId": "8b173abc-9aa0-4948-aa5b-02a9d2840ee2"
+      },
+      "execution_count": 50,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            " quantos anos voce tem:  9\n",
+            "voce é uma criança\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# senha correta, digite uma senha fixa\n",
+        "\n",
+        "a = str(input(\"digite uma senha:  \"))\n",
+        "a == \"gleide\"\n",
+        "\n",
+        "if a == (\"gleide\"):\n",
+        "  print(\"voce acertou a senha\")\n",
+        "\n",
+        "else:\n",
+        "  print(\"voce errou a senha\")\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "nCNIm3sfxlYF"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#positivo, negativo ou zero\n",
+        "\n",
+        "numero = float(input(\"digite um numero:  \"))\n",
+        "\n",
+        "if numero > 0:\n",
+        "  print(\"seu numero é positivo\")\n",
+        "\n",
+        "elif numero < 0:\n",
+        "  print(\" seu numero é negativo\")\n",
+        "\n",
+        "else:\n",
+        "  print(\" seu numero é zero\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_HBE4p8n4F4k",
+        "outputId": "20aac28f-f75e-440c-fbd9-8959c328303e"
+      },
+      "execution_count": 56,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um numero:  0\n",
+            " seu numero é zero\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#fazer uma calculadora simples com as 4 operações\n",
+        "\n",
+        "\n",
+        "print(\"------------------menu---------------------\")\n",
+        "print(\"\")\n",
+        "print(\" opçao - 1 = SOMA\")\n",
+        "print(\" opçao - 2 = SUBTRAÇÃO\")\n",
+        "print(\" opçao - 3 = MULTIPLICAÇÃO\")\n",
+        "print(\" opçao - 4 = DIVISÃO\")\n",
+        "\n",
+        "opçao = int (input(\"digite a opção:  \"))\n",
+        "\n",
+        "a = float(input(f\"escolha um numero:  \"))\n",
+        "b = float(input(f\"escolha um numero:  \"))\n",
+        "\n",
+        "if opçao == 1:\n",
+        " res = a + b\n",
+        "if opçao == 2:\n",
+        "  res = a - b\n",
+        "if opçao == 3:\n",
+        "  res = a * b\n",
+        "if opçao == 4:\n",
+        " res = a / b\n",
+        "\n",
+        "print(f\"O resultado da conta e {res}\")"
+      ],
+      "metadata": {
+        "id": "NIPiVGOZxj6f"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Dia da semana\n",
+        "dia = int(input(\"digite um numero da semana de 1 a 7\"))\n",
+        "\n",
+        "if dia == 1:\n",
+        "  print(\" é domingo\")\n",
+        "\n",
+        "if dia == 2:\n",
+        "  print(\" é segunda\")\n",
+        "\n",
+        "if dia == 3:\n",
+        "  print(\" é terça\")\n",
+        "\n",
+        "if dia == 4:\n",
+        "  print(\" é quarta\")\n",
+        "\n",
+        "if dia == 5:\n",
+        "  print(\" é quinta\")\n",
+        "\n",
+        "if dia == 6:\n",
+        "  print(\" é sexta\")\n",
+        "\n",
+        "if dia == 7:\n",
+        "  print(\" é sabado\")\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QeKsBl9G5uE3",
+        "outputId": "86783ad2-3e45-4ce5-f34a-eedb47a6dd2d"
+      },
+      "execution_count": 57,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um numero da semana de 1 a 7 7\n",
+            " é sabado\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#ano bissexto\n",
+        "\n",
+        "ano = int(input(\" digite o ano:  \"))\n",
+        "\n",
+        "if ano % 4 == 0:\n",
+        "  print(\"seu ano é bissexto\")\n",
+        "\n",
+        "else:\n",
+        "  print(\"ele nao é bissexto\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "43ZUViMs8Gy_",
+        "outputId": "547f3fc6-fa59-4fa3-9430-264c754dc7be"
+      },
+      "execution_count": 59,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            " digite o ano2023\n",
+            "ele nao e bissexto\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#valor de uma compra\n",
+        "\n",
+        "valor = float(input(\"digite o valor da sua compra:  \"))\n",
+        "\n",
+        "if valor >= 100:\n",
+        "  desconto = valor / 10\n",
+        "  res = valor - desconto\n",
+        "\n",
+        "elif valor >= 50:\n",
+        "  desconto = valor / 20\n",
+        "  res = valor - desconto\n",
+        "\n",
+        "elif valor < 50:\n",
+        "  desconto = 0\n",
+        "  res = valor - desconto\n",
+        "print(f\"sua compra é {res} reais\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "R8UCxdPB86_x",
+        "outputId": "88dd3dbb-475e-4d57-9559-561264de22f2"
+      },
+      "execution_count": 60,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite o valor da sua compra100\n",
+            "sua compra é 90.0 reais\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
